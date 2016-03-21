@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.box{
+		width:200px;
+		height:350px;
+		background:orange;
+		position:relative;left:0;top:0;
+		margin:200px auto;
+		-webkit-transform:rotateX(45deg) rotateY(-45deg);
+		-webkit-transform-style:preserve-3d;
+		
+	}
+	.box span{
+		width:100%;
+		height:100%;
+		position:absolute;left:0;top:0;
+		background:purple;
+		-webkit-transition:1s all ease;
+	}
+	.box:active span{-webkit-transform:translateZ(300px);}
+  </style>
+ </head>
+ <body>
+  <div class="box">
+	<span></span>
+  </div>
+ </body>
+</html>

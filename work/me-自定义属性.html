@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	document.addEventListener('DOMContentLoaded',function(){
+		var oBtn=document.querySelector('input');
+		for(var name in oBtn.dataset){
+			alert(name+'='+oBtn.dataset[name]);		
+		}
+	
+	},false);
+  </script>
+ </head>
+ <body>
+  <input type="button" value="按钮" data-a=12 data-b=10 />
+ </body>
+</html>

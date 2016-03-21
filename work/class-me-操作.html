@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	document.addEventListener('DOMContentLoaded',function(){
+		var oBtn=document.querySelector('input');
+		var oDiv=document.querySelector('div');
+		oDiv.classList.add('cc');
+		oDiv.classList.remove('on');
+		//alert(oDiv.classList.contains('active'));
+		oBtn.onclick=function(){
+			oDiv.classList.toggle('cc');
+		};
+	
+	},false);
+  </script>
+ </head>
+ <body>
+ <input type="button" value="按钮" />
+  <div class="on active red"></div>
+ </body>
+</html>

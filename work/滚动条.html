@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+    @keyframes test{
+		form{left:0}
+		to{left:-158px}
+	}
+	#box{width:150px;height:400px;_border:1px solid #000;margin:100px auto;overflow:hidden;position:relative;}
+	#bar{width:400px;height:400px;background:-webkit-repeating-linear-gradient(-45deg,red 0px,red 20px,#fff 20px,#fff 40px,blue 40px,blue 60px);position:absolute;left:0px;top:0px;
+	animation-name:test;
+	animation-duration:1s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+
+	
+	}
+  </style>
+ </head>
+ <body>
+  <div id="box">
+	<div id="bar"></div>
+  </div>
+ </body>
+</html>

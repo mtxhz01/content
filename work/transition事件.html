@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  div{width:200px;height:200px;background:red;}
+  </style>
+  <script>
+	document.addEventListener('DOMContentLoaded',function(){
+		var oDiv=document.body.children[0];
+		oDiv.onmouseover=function(){
+			oDiv.style.width='500px';
+			oDiv.style.WebkitTransition='1s all ease';
+			oDiv.addEventListener('transitionend',function(){
+				oDiv.style.height='500px';
+				alert(1);
+			},false);
+		
+		};
+	
+	},false);
+  </script>
+ </head>
+ <body>
+  <div></div>
+ </body>
+</html>

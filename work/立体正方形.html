@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  *{margin:0;padding:0;list-style:none;}
+	ul{
+		width:200px;
+		height:200px;
+		position:absolute;left:50%;top:50%;margin-left:-100px;margin-top:-100px;
+		-webkit-transform:perspective(800px) rotateY(0) rotateX(0);
+		-webkit-transform-style:preserve-3d;
+		-webkit-transition:1s all ease;
+	}
+	ul li{
+		width:200px;
+		height:200px;
+		position:absolute;left:0;top:0;
+		text-align:center;
+		line-height:200px;
+		font-size:50px;
+		opacity:0.5;
+	}
+	ul li.top{
+		background:blue;
+		-webkit-transform:translateY(-100px) rotateX(-90deg);
+	}
+	ul li.bottom{
+		background:red;
+		-webkit-transform:translateY(100px) rotateX(90deg);
+	}
+
+	ul li.right{
+		background:pink;
+		-webkit-transform:translateX(100px) rotateY(90deg);
+	}
+	ul li.left{
+		background:orange;
+		-webkit-transform:translateX(-100px) rotateY(-90deg);
+	}
+	ul li.front{
+		background:yellow;
+		-webkit-transform:translateZ(100px);
+	}
+	ul li.back{
+		background:purple;
+		-webkit-transform:translateZ(-100px);
+	}
+	ul:active{-webkit-transform:perspective(800px) rotateY(200deg) rotateX(35deg);}
+  </style>
+ </head>
+ <body>
+  <ul>
+	<li class="top">上</li>
+	<li class="bottom">下</li>
+	<li class="right">左</li>
+	<li class="left">右</li>
+	<li class="front">前</li>
+	<li class="back">后</li>  
+  </ul>
+ </body>
+</html>
